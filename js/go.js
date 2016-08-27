@@ -9,7 +9,7 @@
     const data = {
       name: name,
     };
-    $.post('http://localhost:3000/api/groups/create', data, function success(res) {
+    $.post('https://five-years-api.herokuapp.com/api/groups/create', data, function success(res) {
       localStorage.setItem('group', JSON.stringify({
         name: res.name,
         id: res._id,
