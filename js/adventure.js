@@ -18,13 +18,16 @@
       var objectivesInEvent = JSON.parse(localStorage.getItem('objectives'));
       delete objectivesInEvent[$($(event.currentTarget).parent()[0]).text()];
       localStorage.setItem('objectives', JSON.stringify(objectivesInEvent));
+      if (!$('.js-objective').length) {
+        $('.js-finish').addClass('hidden')
+      }
     }).parent());
     $('[type="text"]').val('');
     $('.js-finish').removeClass('hidden')
   });
 
   function makeObjective(str) {
-    return `<p>${str}<button type="button" class="button-delete"><span class="glyphicon glyphicon-remove"></span></button></p>`;
+    return `<p class="js-objective">${str}<button type="button" class="button-delete"><span class="glyphicon glyphicon-remove"></span></button></p>`;
   }
 
   function removeObjective(str) {
