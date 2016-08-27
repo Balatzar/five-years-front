@@ -1,0 +1,291 @@
+/*====================================================================================*\
+    ELEMENTS
+\*====================================================================================*/
+/**==================================================================================**\                                                                                             
+ * CONTENT.............Les pages                                                        
+ *   * INDEX................First Segment/ Second Segment/ Third Segment                                                         
+ \**==================================================================================**/
+
+body {
+	margin:0;
+	padding:0;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+}
+
+h1 {
+	color:#FFF;
+	font-family: "Code";
+	font-size: 3.3em;
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+
+h2 {	
+	color: #FFF;
+	font-family: "Lovelo";
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3 {	
+	color: #FFF;
+	font-family: "Code";
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*==========================================================*\ 
+	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
+-------------------------------------------------------------- 
+	COMMUN - COMMUN - COMMUN - COMMUN - COMMUN - COMMUN    
+\*==========================================================*/ 
+
+header {
+	padding-top:15vh;
+	margin: auto;
+	height:35vh;
+}
+
+.instruction {
+	margin: auto;
+	height:2.5vh;
+	line-height:2.5vh;
+} 
+
+.content {
+	margin: auto;
+	padding-top: 1vh;
+	height:40vh;
+	width: 40vw;
+} 
+
+.content-large {
+	margin: auto;
+	padding-top: 1vh;
+	height:40vh;
+	width: 55vw;
+} 
+
+.validation {
+	margin: auto;
+	height:10vh;
+}
+
+.validation button {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+}
+
+p {
+	color:#FFF;
+	font-family: 'Biryani', sans-serif;
+	font-size: 10px;
+	font-weight: 900;
+	letter-spacing: 0.1em;
+	line-height: 1.1em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/*===============================*\ 
+	COMMON - FORM               
+\*===============================*/ 
+
+.form-group {
+	margin: 0 auto;
+	text-align: center;
+}
+
+input {
+	margin-bottom:3vh;
+	height: 35px;
+	width: 15vw;
+	font-family: "Lovelo";
+	font-weight: bold;
+}
+
+button {
+	height: 35px;
+	width: 8vw;
+	color: #FFF;
+	font-family: 'Biryani', sans-serif;
+	font-size: 1.5em;
+	font-weight: 900;
+	line-height: 5vh;
+	vertical-align: middle;
+	background-color: transparent;
+	border: solid 2px #FFF
+}
+
+.button-delete {
+	float: right;
+	vertical-align: middle;
+	width:2vw;
+	border: none;
+}
+
+
+/*===============================*\ 
+	COMMON - PADDING TOP IN FORM             
+\*===============================*/ 
+
+#go .input-group, .advlist .liste, #whoareyou #loginForm {
+	margin: 0 auto;
+	padding-top: 7vh;
+	width: 15vw;
+}
+
+/*==========================================================*\ 
+	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
+-------------------------------------------------------------- 
+	GOPAGE - GOPAGE - GOPAGE - GOPAGE - GOPAGE - GOPAGE
+\*==========================================================*/ 
+
+#go {
+	background-image:url("../img/bckgrnd/friends2.jpg"); 
+}
+
+/*==========================================================*\ 
+	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
+-------------------------------------------------------------- 
+	ADVENTURE - ADVENTURE - ADVENTURE - ADVENTURE - ADVENTURE
+\*==========================================================*/ 
+
+
+#adventure {
+	background-image:url("../img/bckgrnd/balloons.jpg"); 
+}
+
+/*===============================*\ 
+	ADVENTURE - LIST               
+\*===============================*/ 
+
+.advlist {
+	padding-top: 2vh;
+}
+
+.advlist p{
+	border-top: 1px solid #FFF;
+	line-height: 5vh;
+	vertical-align: middle;
+}
+
+.inline-form  {
+	margin: 0 auto;
+	width: 30vw;
+}
+
+.inline-form .input-group {
+	margin: 0 auto;
+	width: 10vw;
+	text-align: center;
+}
+
+/*==========================================================*\ 
+	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
+-------------------------------------------------------------- 
+	WHOAREYOU - WHOAREYOU - WHOAREYOU - WHOAREYOU - WHOAREYOU
+\*==========================================================*/ 
+
+#whoareyou {
+	background-image:url("../img/bckgrnd/forest.jpg"); 
+}
+
+/*===============================*\ 
+	WHOAREYOU - FORM               
+\*===============================*/ 
+
+#whoareyou button{
+	color: #465149;
+	border: solid 2px #465149;
+}
+
+/*==========================================================*\ 
+	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
+-------------------------------------------------------------- 
+	MOREFRIENDS - MOREFRIENDS - MOREFRIENDS - MOREFRIENDS
+\*==========================================================*/ 
+
+#morefriends {
+	background-image:url("../img/bckgrnd/ocean2.jpg"); 
+}
+
+/*===============================*\ 
+	MOREFRIENDS - FORM               
+\*===============================*/ 
+
+#morefriends #loginForm, #morefriends .liste{
+	margin-top:5vh;
+} 
+
+#morefriends .col-xs-6 {
+	padding-bottom: 3vh;
+}
+
+/*==========================================================*\ 
+	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
+-------------------------------------------------------------- 
+	FINITO - FINITO - FINITO - FINITO - FINITO - FINITO
+\*==========================================================*/ 
+
+#finito {
+	background-image:url("../img/bckgrnd/dawn.jpg"); 
+}
+
+/*===============================*\ 
+	FINITO - FORM               
+\*===============================*/ 
+
+.finitext {
+	margin: 0 auto;
+	padding-top: 7vh;
+	width: 30vw;
+}
+
+.quote {
+	margin: 0 auto;
+	color: #916C96;
+	font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-size: 12px;
+	text-transform: none;
+}
+
+.author {
+	font-size: 8px;
+	text-align: right;
+	margin-right:35px;
+}
+
+.bye {
+	margin-top: -5vh;
+}
+
+/*==========================================================*\ 
+	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
+-------------------------------------------------------------- 
+	INDEX - INDEX - INDEX - INDEX - INDEX - INDEX - INDEX    
+\*==========================================================*/ 
+
+@font-face {
+    font-family: "Code";
+    src: url('../vendor/bootstrap/fonts/Code.otf');
+}
+
+@font-face {
+    font-family: "Lovelo";
+    src: url('../vendor/bootstrap/fonts/Lovelo.otf');
+}
+
+svg {
+	display:block;
+	margin:0 auto;
+	width:15vw;
+}
