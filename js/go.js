@@ -10,7 +10,10 @@
       name: name,
     };
     $.post('http://localhost:3000/api/groups/create', data, function success(res) {
-      localStorage.setItem('groupId', res._id);
+      localStorage.setItem('group', JSON.stringify({
+        name: res.name,
+        id: res._id,
+      }));
       window.location.assign('adventure.html');
     })
       .fail(function error(err) {
