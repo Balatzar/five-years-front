@@ -1,0 +1,24 @@
+{
+  "name": "fiveyears-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "engines": {
+    "node": "6.3.1"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "live-serveur"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.10.2",
+    "eslint-plugin-jsx-a11y": "^1.5.5",
+    "live-server": "^1.1.0"
+  }
+}
