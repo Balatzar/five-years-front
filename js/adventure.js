@@ -16,7 +16,7 @@
     $('.js-objectiveList').append($(makeObjective(text)).children().click(function(event) {
       $(event.currentTarget).parent().remove();
       var objectivesInEvent = JSON.parse(localStorage.getItem('objectives'));
-      delete objectivesInEvent[$($(event.currentTarget).parent()[0]).text()];
+      delete objectivesInEvent[$(this).parent().get(0).firstChild.nodeValue];
       localStorage.setItem('objectives', JSON.stringify(objectivesInEvent));
       if (!$('.js-objective').length) {
         $('.js-finish').addClass('hidden')
