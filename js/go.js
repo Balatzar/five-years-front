@@ -17,8 +17,8 @@
       window.location.assign('adventure.html');
     })
       .fail(function error(err) {
-      console.warn(err)
-    })
+      console.warn(err);
+    });
   })
 
   $('input[name="name"]').keyup(function removeErr() {
