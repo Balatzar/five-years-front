@@ -10,7 +10,7 @@
   $('.js-sendName').click(function sendName() {
     var name = $('input[name="name"]').val();
     var mail = $('input[name="mail"]').val();
-    if (!name || !mail) {
+    if (!name || !mail || !validateEmail(mail)) {
       return error('.js-sendName');
     }
     var data = {
@@ -21,8 +21,7 @@
     }
     console.log(data)
     $.post('https://five-years-api.herokuapp.com/api/participations/create', data, function success(res) {
-      console.log(res)
-      // window.location.assign('adventure.html');
+      window.location.assign('autresgens.html');
     })
       .fail(function error(err) {
       console.warn(err);
@@ -39,5 +38,9 @@
     } else {
       $(selector).css('border-color', '#d00000');
     }
+  }
+  function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
   }
 }());
