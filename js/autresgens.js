@@ -22,6 +22,27 @@
     $('.js-finish').removeClass('hidden');
   });
 
+  $('.js-finish button').click(function sendInvites() {
+    var invites = JSON.parse(localStorage.getItem('invites'));
+    var group = JSON.parse(localStorage.getItem('group'));
+    var data = {
+      groupId: group.id,
+      invitations: Object.keys(invites).map(function(key) {
+        return Object.assign({}, {
+          name: invites[key].name,
+          mail: invites[key].mail,
+        });
+      }),
+    };
+    console.log(data)
+    $.post('https://five-years-api.herokuapp.com/api/invitations/invite', data, function success() {
+      window.location.assign('finito.html');
+    })
+      .fail(function error(err) {
+        console.warn(err);
+      });
+  })
+
   function insertInvitationInDOM(name, mail) {
     $('.js-inviteList').append($(makeInvite(name, mail)).children().click(function(event) {
       $(event.currentTarget).parent().remove();
