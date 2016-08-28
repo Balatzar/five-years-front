@@ -51,6 +51,9 @@
   function init() {
     var group = JSON.parse(localStorage.getItem('group'));
     var objectives = localStorage.getItem('objectives');
+    if (!group) {
+      window.location.assign('/');
+    }
     if (!objectives || objectives === '{}') {
       localStorage.setItem('objectives', JSON.stringify({}));
     } else {
