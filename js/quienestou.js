@@ -18,14 +18,14 @@
       mail: mail,
       groupId: group.id,
       objectives: Object.keys(JSON.parse(objectives)),
-    }
-    console.log(data)
-    $.post('https://five-years-api.herokuapp.com/api/participations/create', data, function success(res) {
+    };
+    console.log(data);
+    $.post('https://five-years-api.herokuapp.com/api/participations/create', data, function success() {
       window.location.assign('autresgens.html');
     })
       .fail(function error(err) {
-      console.warn(err);
-    });
+        console.warn(err);
+      });
   });
 
   $('input').keyup(function removeErr() {
@@ -39,6 +39,7 @@
       $(selector).css('border-color', '#d00000');
     }
   }
+
   function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);

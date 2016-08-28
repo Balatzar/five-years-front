@@ -16,7 +16,7 @@
   });
 
   function insertObjectiveInDOM(text, objectives) {
-    localStorage.setItem('objectives', JSON.stringify(objectives))
+    localStorage.setItem('objectives', JSON.stringify(objectives));
     $('.js-objectiveList').append($(makeObjective(text)).children().click(function(event) {
       $(event.currentTarget).parent().remove();
       var objectivesInEvent = JSON.parse(localStorage.getItem('objectives'));
@@ -29,11 +29,7 @@
   }
 
   function makeObjective(str) {
-    return `<p class="js-objective">${str}<button type="button" class="button-delete"><span class="glyphicon glyphicon-remove"></span></button></p>`;
-  }
-
-  function removeObjective(str) {
-    $(`td:contains("${str}")`).remove();
+    return '<p class="js-objective">' + str + '<button type="button" class="button-delete"><span class="glyphicon glyphicon-remove"></span></button></p>';
   }
 
   $('input[name="text"]').keyup(function removeErr() {
