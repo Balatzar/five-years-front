@@ -56,24 +56,21 @@
 							<div class="col-xs-6">
 								<!-- <input type="text" class="form-control" placeholder=".col-xs-2"> -->
 
-								<form action="" id="loginForm">
+								<form id="loginForm">
 									<div class="form-group input-group">
-										<input type="text" name='username' placeholder="NOM"/>          
+										<input type="text" name='name' placeholder="NOM"/>          
 									</div>
 									<div class="form-group input-group">
-										<input type="password" name='password' placeholder="E-MAIL"/>     
+										<input type="text" name='mail' placeholder="E-MAIL"/>     
 									</div>
 									<div class="form-group">
-										<button type="button">OK</button>
+										<button class="js-sendInvite" type="button">OK</button>
 									</div>
 								</form>
 
 							</div>
 						
-							<div class="liste">
-								<p>Patata</p>
-								<p>Patato</p>
-								<p>Patatu</p>
+							<div class="liste js-inviteList">
 							</div>
 
 						</div> 
@@ -82,8 +79,8 @@
 				</div> 
 					
 				<!-- VALIDATION -->
-				<div class="validation">
-					<a href="finito.html"><button type="button">OK</button></a>
+				<div class="validation js-finish hidden">
+					><button type="button">OK</button>
 				</div>
 						
 				
@@ -97,6 +94,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/autresgens.js"></script>
 
 </body>
 
