@@ -299,59 +299,39 @@ svg {
 
 ---------
 
-/*<div class="col-md-3 prune">
-
-	<div class="panel">
-		<div class="panel-heading">Devenir Roi de Suède
-			<button type="button" id="edit" class="pull-right"><span class="glyphicon glyphicon-pencil"></span></button>
-			<button type="button" id="remove" class="pull-right"><span class="glyphicon glyphicon-trash"></span></button>
-		</div>
-	</div>*/
 
 
+.panel-title {
+	font size:12px;
+}
 
-.panel {
-	margin:5px 0 5px 0;
-	height:2vh;
+.panel-title.pull-left {
+	width:75%;
 	color: #FFF;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-
-	background-color: rgba(135, 113, 82, 0.5);
-	border:2px solid #FFF;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+	white-space:nowrap;
 }
 
  .panel-heading {
-    overflow: hidden;
-    font size:22px;
-	text-overflow: ellipsis;
-	white-space:nowrap;
-/*	font-size: 0.8em;*/
+ 	margin:5px 0 5px 0;
+ 	padding:5px;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
- .panel-heading button {
-/*    vertical-align: middle;*/
-	background-color: transparent;
-	border: solid 2px #FFF
-}
-
-/*.prune {
-	overflow-y:auto;
-	height:25vh;
-}
-
- .objectif {
-	display: inline-block;
-	line-height:0.8vh;
-	border: 1px solid black;
-	background-color: red;
-}
-
-.prune .btn {
-	padding:0;
+.btn-default {
 	height:20px;
-	width:10%;
-	color:#37483a;
-	border: 1px solid black;
+	width:20px;
+	font-size: 10px;
+	background-color: transparent;
+	border:1px solid transparent;
+}
+
+/*.panel #edit, .panel #remove {
+	float:right;
 }*/
+
 
