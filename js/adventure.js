@@ -1,6 +1,16 @@
 /* eslint-env jquery */
+/* global redom */
 
 (function adventure() {
+
+  var el = redom.el;
+  var mount = redom.mount;
+  var text = redom.text;
+  
+  var children = redom.children;
+  var props = redom.props;
+  var events = redom.events;
+
   init();
 
   $('.js-createObjetive').click(function createObjetive() {
@@ -10,26 +20,53 @@
     }
     var objectives = JSON.parse(localStorage.getItem('objectives'));
     objectives[text] = text;
-    insertObjectiveInDOM(text, objectives);
+    localStorage.setItem('objectives', JSON.stringify(objectives));
+    makeObjective(text);
     $('[type="text"]').val('');
     $('.js-finish').removeClass('hidden');
   });
 
-  function insertObjectiveInDOM(text, objectives) {
-    localStorage.setItem('objectives', JSON.stringify(objectives));
-    $('.js-objectiveList').append($(makeObjective(text)).children().click(function(event) {
-      $(event.currentTarget).parent().remove();
-      var objectivesInEvent = JSON.parse(localStorage.getItem('objectives'));
-      delete objectivesInEvent[$(this).parent().get(0).firstChild.nodeValue];
-      localStorage.setItem('objectives', JSON.stringify(objectivesInEvent));
-      if (!$('.js-objective').length) {
-        $('.js-finish').addClass('hidden');
-      }
-    }).parent());
-  }
-
   function makeObjective(str) {
-    return '<p class="js-objective">' + str + '<button type="button" class="button-delete"><span class="glyphicon glyphicon-remove"></span></button></p>';
+    var div = el('div');
+    var span = el('span');
+
+    var objective = div(
+      props({ className: 'panel-heading clearfix', }),
+      children(function(el) {
+        return [
+          el.div1 = div(text(str), props({ className: 'panel-title pull-left', })),
+          el.div2 = div(props({ className: 'btn-group pull-right', }), children(function(el) {
+            return [
+              el.span1 = span(
+                props({ className: 'glyphicon glyphicon-pencil', }),
+                events({
+                  onclick: function() {
+                    // var objectives = JSON.parse(localStorage.getItem('objectives'));
+                    console.log('faut faire l\'édition !');
+                  }
+                })
+              ),
+              el.span2 = span(
+                props({ className: 'glyphicon glyphicon-remove', }),
+                events({
+                  onclick: function(el) {
+                    var objectives = JSON.parse(localStorage.getItem('objectives'));
+                    delete objectives[str];
+                    localStorage.setItem('objectives', JSON.stringify(objectives));
+                    $(el).parent().parent().remove();
+                    if (!Object.keys(objectives).length) {
+                      $('.js-finish').addClass('hidden');
+                    }
+                  },
+                })
+              ),
+            ];
+          })),
+        ];
+      })
+    );
+    
+    mount(document.querySelector('.js-objectiveList'), objective);
   }
 
   $('input[name="text"]').keyup(function removeErr() {
@@ -55,7 +92,7 @@
     } else {
       objectives = JSON.parse(objectives);
       Object.keys(objectives).forEach(function(text) {
-        insertObjectiveInDOM(text, objectives);
+        makeObjective(text, objectives);
       });
       $('.js-finish').removeClass('hidden');
     }
