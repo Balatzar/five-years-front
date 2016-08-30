@@ -223,6 +223,7 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
+
 .btn {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -233,15 +234,15 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 2px solid #60BDA6;
-  color: #42DCA3;
+  border: 2px solid #FFF;
+  color: #FFF;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
   border: 2px solid #60BDA6;
   outline: none;
-  color: black;
+  color: #FFF;
   background-color: #60BDA6;
 }
 ul.banner-social-buttons {

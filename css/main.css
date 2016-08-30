@@ -28,7 +28,7 @@ h2 {
 	color: #FFF;
 	font-family: "Lovelo";
 	font-size: 3em;
-	font-weight: bold;
+	font-weight: 500;
 	text-align: center;
 }
 
@@ -37,6 +37,7 @@ h3 {
 	font-family: "Code";
 	font-size: 1.5em;
 	font-weight: bold;
+	letter-spacing: 0.1em;
 	text-align: center;
 }
 
@@ -54,22 +55,23 @@ header {
 
 .instruction {
 	margin: auto;
+	padding-bottom:4vh;
 	height:2.5vh;
 	line-height:2.5vh;
 } 
 
-.content {
+.content-small {
 	margin: auto;
 	padding-top: 1vh;
 	height:40vh;
 	width: 40vw;
 } 
 
-.content-large {
+.content {
 	margin: auto;
 	padding-top: 1vh;
 	height:40vh;
-	width: 55vw;
+	width: 80vw;
 } 
 
 .validation {
@@ -85,11 +87,11 @@ header {
 
 p {
 	color:#FFF;
-	font-family: 'Biryani', sans-serif;
+	font-family: 'Code', sans-serif;
 	font-size: 10px;
-	font-weight: 900;
+	font-weight: 100;
 	letter-spacing: 0.1em;
-	line-height: 1.1em;
+	line-height: 1.5em;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -111,7 +113,7 @@ input {
 	font-weight: bold;
 }
 
-button {
+.button-big {
 	height: 35px;
 	width: 8vw;
 	color: #FFF;
@@ -136,7 +138,7 @@ button {
 	COMMON - PADDING TOP IN FORM             
 \*===============================*/ 
 
-#go .input-group, .advlist .liste, #whoareyou #loginForm {
+#go .input-group, #whoareyou #loginForm {
 	margin: 0 auto;
 	padding-top: 7vh;
 	width: 15vw;
@@ -246,7 +248,7 @@ button {
 .finitext {
 	margin: 0 auto;
 	padding-top: 7vh;
-	width: 30vw;
+	width: 40vw;
 }
 
 .quote {
@@ -289,3 +291,47 @@ svg {
 	margin:0 auto;
 	width:15vw;
 }
+
+
+
+
+
+
+---------
+
+
+
+.panel-title {
+	font size:12px;
+}
+
+.panel-title.pull-left {
+	width:75%;
+	color: #FFF;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+	white-space:nowrap;
+}
+
+ .panel-heading {
+ 	margin:5px 0 5px 0;
+ 	padding:5px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-default {
+	height:20px;
+	width:20px;
+	font-size: 10px;
+	background-color: transparent;
+	border:1px solid transparent;
+}
+
+/*.panel #edit, .panel #remove {
+	float:right;
+}*/
+
+
