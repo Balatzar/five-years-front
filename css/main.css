@@ -133,7 +133,6 @@ input {
 	border: none;
 }
 
-
 /*===============================*\ 
 	COMMON - PADDING TOP IN FORM             
 \*===============================*/ 
@@ -142,6 +141,45 @@ input {
 	margin: 0 auto;
 	padding-top: 7vh;
 	width: 15vw;
+}
+
+/*===============================*\ 
+	COMMON - CARDS             
+\*===============================*/ 
+
+.panel-heading {
+ 	margin:5px 0 5px 0;
+ 	padding:5px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.panel-title {
+	font size:12px;
+}
+
+.panel-title.pull-left {
+	width:70%;
+	color: #FFF;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+	white-space:nowrap;
+}
+
+.btn-default {
+	height:20px;
+	width:20px;
+	font-size: 10px;
+	background-color: transparent;
+	border:1px solid transparent;
+}
+
+#adventure .col-md-3, #morefriends .col-md-3 {
+	padding-top: 0;
+	margin-top: 0;
+	overflow-y:auto;
 }
 
 /*==========================================================*\ 
@@ -165,19 +203,13 @@ input {
 	background-image:url("../img/bckgrnd/balloons.jpg"); 
 }
 
+#adventure .col-md-3{
+	height: 26vh;
+}
+
 /*===============================*\ 
-	ADVENTURE - LIST               
+	ADVENTURE - FORM          
 \*===============================*/ 
-
-.advlist {
-	padding-top: 2vh;
-}
-
-.advlist p{
-	border-top: 1px solid #FFF;
-	line-height: 5vh;
-	vertical-align: middle;
-}
 
 .inline-form  {
 	margin: 0 auto;
@@ -217,6 +249,15 @@ input {
 
 #morefriends {
 	background-image:url("../img/bckgrnd/ocean2.jpg"); 
+}
+
+#morefriends .panel-heading {
+ 	margin-bottom:10px;
+ 	margin-top:0;
+}
+
+#morefriends .col-md-3 {
+	height: 22vh;
 }
 
 /*===============================*\ 
@@ -291,47 +332,3 @@ svg {
 	margin:0 auto;
 	width:15vw;
 }
-
-
-
-
-
-
----------
-
-
-
-.panel-title {
-	font size:12px;
-}
-
-.panel-title.pull-left {
-	width:75%;
-	color: #FFF;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-    overflow: hidden;
-	text-overflow: ellipsis;
-	vertical-align: middle;
-	white-space:nowrap;
-}
-
- .panel-heading {
- 	margin:5px 0 5px 0;
- 	padding:5px;
-	background-color: rgba(0, 0, 0, 0.2);
-}
-
-.btn-default {
-	height:20px;
-	width:20px;
-	font-size: 10px;
-	background-color: transparent;
-	border:1px solid transparent;
-}
-
-/*.panel #edit, .panel #remove {
-	float:right;
-}*/
-
-
