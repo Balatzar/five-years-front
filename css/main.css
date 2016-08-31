@@ -332,3 +332,18 @@ svg {
 	margin:0 auto;
 	width:15vw;
 }
+
+/* Balthazar ! */
+
+.glyphicon {
+	cursor: pointer;
+	margin: 5px;
+}
+
+input {
+	padding: 10px;
+}
+
+.panel-heading.clearfix {
+	padding: 10px;
+}
