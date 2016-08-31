@@ -123,7 +123,17 @@ input {
 	line-height: 5vh;
 	vertical-align: middle;
 	background-color: transparent;
-	border: solid 2px #FFF
+	border: solid 2px #FFF;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.button-big:hover, .button-big:focus {
+	color: #FFF;
+  outline: none;
+  background-color: #60BDA6;
+  border: 2px solid #60BDA6;
 }
 
 .button-delete {
@@ -168,7 +178,7 @@ input {
 	white-space:nowrap;
 }
 
-.btn-default {
+.col-md-3 .btn-default {
 	height:20px;
 	width:20px;
 	font-size: 10px;
@@ -331,4 +341,12 @@ svg {
 	display:block;
 	margin:0 auto;
 	width:15vw;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+}
+
+svg:hover {
+  opacity: 0.5;
+  animation: hideshow 10s 1.5s ease infinite;
 }
