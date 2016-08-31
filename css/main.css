@@ -41,6 +41,11 @@ h3 {
 	text-align: center;
 }
 
+h4 {	
+	color: #FFF;
+}
+
+
 /*==========================================================*\ 
 	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
 -------------------------------------------------------------- 
@@ -244,7 +249,7 @@ button {
 	FINITO - FORM               
 \*===============================*/ 
 
-.finitext {
+.text-finito {
 	margin: 0 auto;
 	padding-top: 7vh;
 	width: 30vw;
@@ -272,7 +277,26 @@ button {
 /*==========================================================*\ 
 	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
 -------------------------------------------------------------- 
-	INDEX - INDEX - INDEX - INDEX - INDEX - INDEX - INDEX    
+	FINITO - FINITO - FINITO - FINITO - FINITO - FINITO
+\*==========================================================*/ 
+
+#guest {
+	background-image:url("../img/bckgrnd/stairs.jpg"); 
+}
+
+.text-guest {
+	margin: 0 auto;
+	padding-top: 4vh;
+	width: 30vw;
+}
+
+#guest h4 {
+	text-align: center;
+}
+/*==========================================================*\ 
+	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
+-------------------------------------------------------------- 
+	   
 \*==========================================================*/ 
 
 @font-face {
