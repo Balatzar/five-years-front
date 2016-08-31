@@ -153,10 +153,6 @@ input {
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.panel-title {
-	font size:12px;
-}
-
 .panel-title.pull-left {
 	width:70%;
 	color: #FFF;
