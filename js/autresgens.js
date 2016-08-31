@@ -1,6 +1,18 @@
 /* eslint-env jquery */
+/* global redom */
 
 (function autresgens() {
+
+  var el = redom.el;
+  var mount = redom.mount;
+  var text = redom.text;
+  
+  var children = redom.children;
+  var props = redom.props;
+  var events = redom.events;
+
+  var count = 1;
+
   init();
 
   $('.js-sendInvite').click(function createObjetive() {
@@ -16,7 +28,7 @@
       mail: mail,
     };
     localStorage.setItem('invites', JSON.stringify(invites));
-    insertInvitationInDOM(name, mail);
+    makeObjective(text);
     $('input[name="name"]').val('');
     $('input[name="mail"]').val('');
     $('.js-finish').removeClass('hidden');
@@ -41,22 +53,50 @@
       .fail(function error(err) {
         console.warn(err);
       });
-  })
+  });
 
-  function insertInvitationInDOM(name, mail) {
-    $('.js-inviteList').append($(makeInvite(name, mail)).children().click(function(event) {
-      $(event.currentTarget).parent().remove();
-      var invitesInEvent = JSON.parse(localStorage.getItem('invites'));
-      delete invitesInEvent[$(this).parent().get(0).firstChild.nodeValue];
-      localStorage.setItem('invites', JSON.stringify(invitesInEvent));
-      if (!$('.js-objective').length) {
-        $('.js-finish').addClass('hidden');
-      }
-    }).parent());
-  }
+  function makeObjective(str) {
+    var div = el('div');
+    var span = el('span');
 
-  function makeInvite(name, mail) {
-    return '<p class="js-invite">' + name + ' ' + mail + '<button type="button" class="button-delete"><span class="glyphicon glyphicon-remove"></span></button></p>';
+    var objective = div(
+      props({ className: 'panel-heading clearfix', }),
+      children(function(el) {
+        return [
+          el.div1 = div(text(str), props({ className: 'panel-title pull-left', })),
+          el.div2 = div(props({ className: 'btn-group pull-right', }), children(function(el) {
+            return [
+              el.span1 = span(
+                props({ className: 'glyphicon glyphicon-pencil', }),
+                events({
+                  onclick: function() {
+                    // var objectives = JSON.parse(localStorage.getItem('objectives'));
+                    console.log('faut faire l\'édition !');
+                  },
+                })
+              ),
+              el.span2 = span(
+                props({ className: 'glyphicon glyphicon-remove', }),
+                events({
+                  onclick: function(el) {
+                    var invites = JSON.parse(localStorage.getItem('invites'));
+                    delete invites[str];
+                    localStorage.setItem('invites', JSON.stringify(invites));
+                    $(el).parent().parent().remove();
+                    if (!Object.keys(invites).length) {
+                      $('.js-finish').addClass('hidden');
+                    }
+                  },
+                })
+              ),
+            ];
+          })),
+        ];
+      })
+    );
+    
+    mount(document.querySelector(count % 2 ? '.js-odd' : '.js-even'), objective);
+    count += 1;
   }
 
   $('input').keyup(function removeErr() {
@@ -87,7 +127,7 @@
     } else {
       invites = JSON.parse(invites);
       Object.keys(invites).forEach(function(inv) {
-        insertInvitationInDOM(invites[inv].name, invites[inv].mail);
+        makeObjective(invites[inv].name + invites[inv].mail);
       });
       $('.js-finish').removeClass('hidden');
     }
