@@ -93,7 +93,7 @@ p {
 	letter-spacing: 0.1em;
 	line-height: 1.5em;
 	text-align: center;
-	text-transform: uppercase;
+/*	text-transform: uppercase;*/
 }
 
 /*===============================*\ 
@@ -109,31 +109,36 @@ input {
 	margin-bottom:3vh;
 	height: 35px;
 	width: 15vw;
-	font-family: "Lovelo";
-	font-weight: bold;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
 }
 
-.button-big {
-	height: 35px;
-	width: 8vw;
-	color: #FFF;
-	font-family: 'Biryani', sans-serif;
-	font-size: 1.5em;
-	font-weight: 900;
-	line-height: 5vh;
-	vertical-align: middle;
-	background-color: transparent;
-	border: solid 2px #FFF;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
+/*===============================*\ 
+	COMMON - BUTTON            
+\*===============================*/ 
+
+.btn {
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0;
 }
 
-.button-big:hover, .button-big:focus {
-	color: #FFF;
-  outline: none;
-  background-color: #60BDA6;
+.btn-default {
+  border: 2px solid #FFF;
+  color: #FFF;
+  background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
   border: 2px solid #60BDA6;
+  outline: none;
+  color: #FFF;
+  background-color: #60BDA6;
 }
 
 .button-delete {
@@ -246,10 +251,10 @@ input {
 	WHOAREYOU - FORM               
 \*===============================*/ 
 
-#whoareyou button{
+/*#whoareyou button{
 	color: #465149;
 	border: solid 2px #465149;
-}
+}*/
 
 /*==========================================================*\ 
 	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
