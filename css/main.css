@@ -81,13 +81,11 @@ header {
 	width: 80vw;
 } 
 
-#validation {
-		display: block;
-		margin: 0 auto;
-    position: fixed;
-    bottom: 11vh;
-    left:0;
-    right:0; 
+.validation  {
+  position: fixed;
+  bottom:11vh;
+  left:0;
+  right: 0;
 }
 
 p {
