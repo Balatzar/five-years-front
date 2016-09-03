@@ -13,7 +13,8 @@
 
   init();
 
-  $('.js-createObjetive').click(function createObjetive() {
+  $('.js-createObjetive').submit(function createObjetive(event) {
+    event.preventDefault();
     var text = $('[type="text"]').val();
     if (!text) {
       return error('.js-createObjetive');
