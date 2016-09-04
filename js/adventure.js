@@ -17,7 +17,7 @@
     event.preventDefault();
     var text = $('[type="text"]').val();
     if (!text) {
-      return error('.js-createObjetive');
+      return error('.js-error');
     }
     var objectives = JSON.parse(localStorage.getItem('objectives'));
     objectives[text] = text;
@@ -71,7 +71,7 @@
   }
 
   $('input[name="text"]').keyup(function removeErr() {
-    error('.js-createObjetive', true);
+    error('.js-error', true);
   });
 
   function error(selector, remove) {

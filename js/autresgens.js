@@ -15,11 +15,12 @@
 
   init();
 
-  $('.js-sendInvite').click(function createObjetive() {
+  $('.js-sendInvite').submit(function createObjetive(event) {
+    event.preventDefault();
     var name = $('input[name="name"]').val();
     var mail = $('input[name="mail"]').val();
     if (!name || !mail || !validateEmail(mail)) {
-      return error('.js-sendInvite');
+      return error('.js-error');
     }
     var invites = JSON.parse(localStorage.getItem('invites'));
     var text = name + ' ' + mail;
@@ -100,7 +101,7 @@
   }
 
   $('input').keyup(function removeErr() {
-    error('.js-sendInvite', true);
+    error('.js-error', true);
   });
 
   function error(selector, remove) {
