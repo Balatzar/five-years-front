@@ -2,8 +2,15 @@
     ELEMENTS
 \*====================================================================================*/
 /**==================================================================================**\                                                                                             
- * CONTENT.............Les pages                                                        
- *   * INDEX................First Segment/ Second Segment/ Third Segment                                                         
+ * CONTENT............................................................................*                                                      
+ *   * COMMON................Forms/ Buttons/ Cards
+ *   * GO....................Background
+ *   * ADVENTURE.............Background /Form
+ *   * WHOAREYOU.............Background
+ *   * MOREFRIENDS...........Background /Form
+ *   * FINITO................Background /Form
+ *   * ......................
+ *   * ................................................................................*                                                         
  \**==================================================================================**/
 
 body {
@@ -44,7 +51,7 @@ h3 {
 /*==========================================================*\ 
 	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
 -------------------------------------------------------------- 
-	COMMUN - COMMUN - COMMUN - COMMUN - COMMUN - COMMUN    
+	COMMON - COMMON - COMMON - COMMON - COMMON - COMMON    
 \*==========================================================*/ 
 
 header {
@@ -74,21 +81,17 @@ header {
 	width: 80vw;
 } 
 
-.validation {
-	margin: auto;
-	height:10vh;
-}
-
-.validation button {
-	display: block;
-	margin: 0 auto;
-	position: relative;
+.validation  {
+  position: fixed;
+  bottom:11vh;
+  left:0;
+  right: 0;
 }
 
 p {
 	color:#FFF;
 	font-family: 'Code', sans-serif;
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: 100;
 	letter-spacing: 0.1em;
 	line-height: 1.5em;
@@ -137,6 +140,14 @@ input {
 
 .btn-default:hover,
 .btn-default:focus {
+  border: 2px solid #FFF;
+  outline: none;
+  background-color: #FFF;
+  color:gray;
+}
+
+#tryit .btn-default:hover,
+#tryit .btn-default:focus {
   border: 2px solid #60BDA6;
   outline: none;
   color: #FFF;
@@ -318,7 +329,7 @@ input {
 /*==========================================================*\ 
 	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
 -------------------------------------------------------------- 
-	INDEX - INDEX - INDEX - INDEX - INDEX - INDEX - INDEX    
+
 \*==========================================================*/ 
 
 @font-face {
