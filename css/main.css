@@ -161,6 +161,15 @@ input {
 	border: none;
 }
 
+.button-validation {
+	position: fixed;
+	display: block;
+	left: 0;
+	right: 0;
+	bottom:5vh;
+	text-align: center;
+}
+
 /*===============================*\ 
 	COMMON - PADDING TOP IN FORM             
 \*===============================*/ 
@@ -176,9 +185,14 @@ input {
 \*===============================*/ 
 
 .panel-heading {
- 	margin:5px 0 5px 0;
+ 	margin:0.7vw;
  	padding:5px;
+	text-align:center;
 	background-color: rgba(0, 0, 0, 0.2);
+	float: left;
+	width:18vw;
+	left:0;
+	right:0;
 }
 
 .panel-title.pull-left {
@@ -198,12 +212,6 @@ input {
 	font-size: 10px;
 	background-color: transparent;
 	border:1px solid transparent;
-}
-
-#adventure .col-md-3, #morefriends .col-md-3 {
-	padding-top: 0;
-	margin-top: 0;
-	overflow-y:auto;
 }
 
 /*==========================================================*\ 
