@@ -393,7 +393,7 @@ svg:hover {
 		width: 100%;
 	}
 
-	h2 {	
+	#finito h2 {	
 		font-size: 2.3em;
 		position: fixed;
 		display: block;
@@ -401,6 +401,10 @@ svg:hover {
 		right: 0;
 		bottom:5vh;
 		text-align: center;
+	}
+
+	h3 {	
+		font-size: 1.3em;
 	}
 
 }
