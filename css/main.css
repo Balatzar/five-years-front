@@ -389,12 +389,18 @@ svg:hover {
 
 @media screen and (max-width: 480px) {
 
-.finitext {
-	width: 100%;
-}
-
 	.finitext, .quienestext, #loginForm-reduce, #whoareyou #loginForm {
 		width: 100%;
+	}
+
+	h2 {	
+		font-size: 2.3em;
+		position: fixed;
+		display: block;
+		left: 0;
+		right: 0;
+		bottom:5vh;
+		text-align: center;
 	}
 
 }
@@ -421,6 +427,14 @@ svg:hover {
 	header {
 		padding-top:5vh;
 		height:25vh;
+	}
+
+	#go .input-group, #whoareyou #loginForm {
+		padding-top: 3vh;
+	}
+
+	h2 {	
+		font-size: 2.3em;
 	}
 
 }
