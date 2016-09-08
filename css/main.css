@@ -376,3 +376,61 @@ svg:hover {
   opacity: 0.5;
   animation: hideshow 10s 1.5s ease infinite;
 }
+
+
+/*==========================================================*\ 
+	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
+-------------------------------------------------------------- 
+	RESPONSIVE - RESPONSIVE - RESPONSIVE - RESPONSIVE
+\*==========================================================*/ 
+
+
+/*MOBILE*MOBILE*MOBILE*MOBILE*MOBILE*/
+
+@media screen and (max-width: 480px) {
+
+.finitext {
+	width: 100%;
+}
+
+	.finitext, .quienestext, #loginForm-reduce, #whoareyou #loginForm {
+		width: 100%;
+	}
+
+}
+
+/*TABLET*TABLET*TABLET*TABLET*TABLET*/
+
+@media screen and (max-width: 768px) {
+
+	.finitext, .quienestext, #loginForm-reduce, #whoareyou #loginForm {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.content-small
+	{
+		width:80vw;
+		/* Non centrer*/
+	}
+
+	h1 {
+		font-size: 2.7em;
+	}
+
+	header {
+		padding-top:5vh;
+		height:25vh;
+	}
+
+}
+
+
+
+@media screen and (max-width: 1130px) {
+
+.finitext {
+	width: 100%;
+}
+
+}
