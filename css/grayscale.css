@@ -66,14 +66,12 @@ a:focus {
 \*==========================================================*/ 
 
 .intro {
-  display: table;
   width: 100%;
-  height: auto;
-  padding: 100px 0;
+  height:auto;
+  display: table;
   text-align: center;
   color: white;
   background: url(../img/bckgrnd/index.jpg) no-repeat bottom center scroll;
-  background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -89,7 +87,7 @@ a:focus {
 .intro .intro-body .intro-text {
   font-size: 18px;
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .intro {
     height: 100%;
     padding: 0;
@@ -100,7 +98,7 @@ a:focus {
   .intro .intro-body .intro-text {
     font-size: 26px;
   }
-}
+}*/
 
 /*==========================================================*\  
   INDEX - INDEX - INDEX - INDEX - INDEX - INDEX - INDEX    
@@ -108,14 +106,13 @@ a:focus {
   SECTION SETTINGS - SECTION SETTINGS - SECTION SETTINGS
 \*==========================================================*/ 
 
-.container:not(:last-of-type) {
+.container {
   height: 100vh;
   padding-top: 25vh;
 }
 
-.container:last-of-type {
-  height: 90vh;
-  padding-top: 25vh;
+.intro .container {
+   height: 100vh;
 }
 
 #what p {
@@ -123,7 +120,6 @@ a:focus {
   line-height: 1.7em;
   font-size: 1em;
 }
-
 
 #what i {
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -202,3 +198,43 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
+
+
+/*==========================================================*\ 
+	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
+-------------------------------------------------------------- 
+	RESPONSIVE - RESPONSIVE - RESPONSIVE - RESPONSIVE
+\*==========================================================*/ 
+
+
+/*MOBILE*MOBILE*MOBILE*MOBILE*MOBILE*/
+
+/*  @media screen and (max-width: 480px) {
+
+    #what p {
+      line-height: 1em;
+      font-size: 0.7em;
+    }
+
+    #what i {
+      font-size: 1em;
+      text-transform: none;
+    }
+
+  } */
+
+/*TABLET*TABLET*TABLET*TABLET*TABLET*/
+
+  @media screen and (max-width: 768px) {
+
+    #what p {
+      line-height: 1.3em;
+      font-size: 0.9em;
+    }
+
+    #what i {
+      font-size: 1.3em;
+      text-transform: none;
+    }
+
+  }
