@@ -407,6 +407,10 @@ svg:hover {
 		font-size: 1.3em;
 	}
 
+	svg {
+		width:30vw;
+	}
+
 }
 
 /*TABLET*TABLET*TABLET*TABLET*TABLET*/
@@ -439,6 +443,10 @@ svg:hover {
 
 	h2 {	
 		font-size: 2.3em;
+	}
+
+	svg {
+		width:20vw;
 	}
 
 }

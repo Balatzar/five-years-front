@@ -156,6 +156,10 @@ a:focus {
   height: 70vh;
 }
 
+#steps .container {
+  height: 150vh;
+}
+
 /*===============================*\ 
   HOW - FOOTER               
 \*===============================*/ 
@@ -225,7 +229,7 @@ body {
 
 /*TABLET*TABLET*TABLET*TABLET*TABLET*/
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 770px) {
 
     #what p {
       line-height: 1.3em;
@@ -237,4 +241,19 @@ body {
       text-transform: none;
     }
 
+    footer {
+      margin: 0;
+      padding: 0;
+      bottom:0;
+      height: 10vh;
+      background-color: #FFF;
+    }
+
+    footer p {
+      margin: 0 auto;
+      line-height: 10vh;
+      color: #60BDA6;
+    }
+
+  
   }
