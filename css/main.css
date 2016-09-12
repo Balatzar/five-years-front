@@ -401,6 +401,12 @@ svg:hover {
 		width:30vw;
 	}
 
+	#adventure .panel-heading {
+		margin:0 0 1vh 0;
+		float: none;
+		width:100%;
+	}
+
 }
 
 /*TABLET*TABLET*TABLET*TABLET*TABLET*/
