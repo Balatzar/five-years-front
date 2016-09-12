@@ -251,6 +251,27 @@ input {
 	width:23%;
 }
 
+/*
+
+#adventure .form-group {
+	border: 1px solid red;
+}
+
+.form-control {
+	border: 1px solid red;
+}
+
+#adventure .form-inline {
+	border: 1px solid red;
+}
+
+#adventure .form-inline button {
+	border: 1px solid red;
+}
+
+*/
+
+
 /*==========================================================*\ 
 	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
 -------------------------------------------------------------- 
@@ -446,8 +467,6 @@ svg:hover {
 	}
 
 }
-
-
 
 @media screen and (max-width: 1130px) {
 
