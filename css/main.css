@@ -189,18 +189,10 @@ input {
 	color: #FFF;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-    overflow: hidden;
+  overflow: hidden;
 	text-overflow: ellipsis;
 	vertical-align: middle;
 	white-space:nowrap;
-}
-
-.col-md-3 .btn-default {
-	height:20px;
-	width:20px;
-	font-size: 10px;
-	background-color: transparent;
-	border:1px solid transparent;
 }
 
 /* Balthazar was here! */
@@ -251,15 +243,34 @@ input {
 }
 
 #adventure .panel-heading {
- 	margin:0.7vw;
+ 	margin:1%;
  	padding:5px;
 	text-align:center;
 	background-color: rgba(0, 0, 0, 0.2);
 	float: left;
-	width:18vw;
-	left:0;
-	right:0;
+	width:23%;
 }
+
+/*
+
+#adventure .form-group {
+	border: 1px solid red;
+}
+
+.form-control {
+	border: 1px solid red;
+}
+
+#adventure .form-inline {
+	border: 1px solid red;
+}
+
+#adventure .form-inline button {
+	border: 1px solid red;
+}
+
+*/
+
 
 /*==========================================================*\ 
 	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
@@ -411,6 +422,12 @@ svg:hover {
 		width:30vw;
 	}
 
+	#adventure .panel-heading {
+		margin:0 0 1vh 0;
+		float: none;
+		width:100%;
+	}
+
 }
 
 /*TABLET*TABLET*TABLET*TABLET*TABLET*/
@@ -450,8 +467,6 @@ svg:hover {
 	}
 
 }
-
-
 
 @media screen and (max-width: 1130px) {
 
