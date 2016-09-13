@@ -5,7 +5,7 @@
     event.preventDefault();
     var name = $('input[name="name"]').val();
     if (!name) {
-      return error('.js-error');
+      return error('.js-alert');
     }
     var data = {
       name: name,
@@ -23,14 +23,14 @@
   });
 
   $('input[name="name"]').keyup(function removeErr() {
-    error('.js-error', true);
+    error('.js-alert', true);
   });
 
-  function error(selector, remove) {
-    if (remove) {
-      $(selector).css('border-color', '#FFFFFF');
+  function error(selector, hide) {
+    if (hide) {
+      $(selector).addClass('hidden');
     } else {
-      $(selector).css('border-color', '#d00000');
+      $(selector).removeClass('hidden');
     }
   }
 }());
