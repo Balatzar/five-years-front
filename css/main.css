@@ -195,7 +195,6 @@ input {
 	white-space:nowrap;
 }
 
-
 .panel-title.pull-left {
 	width:100%;
 	color: #000;
@@ -277,27 +276,6 @@ input {
 	box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
 	border-radius: .28571429rem;
 }
-
-/*
-
-#adventure .form-group {
-	border: 1px solid red;
-}
-
-.form-control {
-	border: 1px solid red;
-}
-
-#adventure .form-inline {
-	border: 1px solid red;
-}
-
-#adventure .form-inline button {
-	border: 1px solid red;
-}
-
-*/
-
 
 /*==========================================================*\ 
 	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
