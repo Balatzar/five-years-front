@@ -3,13 +3,14 @@
 \*====================================================================================*/
 /**==================================================================================**\                                                                                             
  * CONTENT............................................................................*                                                      
- *   * COMMON................Forms/ Buttons/ Cards
+ *   * COMMON................Forms / Buttons / Cards
  *   * GO....................Background
- *   * ADVENTURE.............Background /Form
+ *   * ADVENTURE.............Background / Form
  *   * WHOAREYOU.............Background
- *   * MOREFRIENDS...........Background /Form
- *   * FINITO................Background /Form
+ *   * MOREFRIENDS...........Background / Form
+ *   * FINITO................Background / Form
  *   * ......................
+ *   * RESPONSIVE............Mobile / Tablet / Dekstop
  *   * ................................................................................*                                                         
  \**==================================================================================**/
 
@@ -89,14 +90,13 @@ header {
 }
 
 p {
-	color:#FFF;
-	font-family: 'Code', sans-serif;
-	font-size: 12px;
-	font-weight: 100;
-	letter-spacing: 0.1em;
-	line-height: 1.5em;
-	text-align: center;
-/*	text-transform: uppercase;*/
+  color:#FFF;
+  font-family: 'Code', sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  text-align: center;
 }
 
 /*===============================*\ 
@@ -126,47 +126,47 @@ input {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
+  border-radius: 0;  
+  transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  border-radius: 0;
 }
 
 .btn-default {
-  border: 2px solid #FFF;
   color: #FFF;
   background-color: transparent;
+  border: 2px solid #FFF;
 }
 
 .btn-default:hover,
 .btn-default:focus {
+  color:gray;
+  background-color: #FFF;
   border: 2px solid #FFF;
   outline: none;
-  background-color: #FFF;
-  color:gray;
 }
 
 #tryit .btn-default:hover,
 #tryit .btn-default:focus {
-  border: 2px solid #60BDA6;
-  outline: none;
   color: #FFF;
   background-color: #60BDA6;
+  border: 2px solid #60BDA6;
+  outline: none;
 }
 
 .button-delete {
 	float: right;
-	vertical-align: middle;
 	width:2vw;
+  vertical-align: middle;
 	border: none;
 }
 
 .button-validation {
+  display: block;
 	position: fixed;
-	display: block;
+  bottom:5vh;
 	left: 0;
 	right: 0;
-	bottom:5vh;
 	text-align: center;
 }
 
@@ -225,37 +225,42 @@ input {
 /*===== COMMON - CARDS - ELLIPSIS ======*/ 
 
 .ellipsis {
+  height: 6vh;
 	overflow: hidden;
-	height: 6vh;
 	line-height: 25px;
 }
 
 .ellipsis p {
 	color: #000;
+	font-size: 12px;
 }
 
 .ellipsis:before {
 	content:"";
 	float: left;
+  height: 6vh;	
 	width: 5px;
-	height: 6vh;	
 }
 
 .ellipsis > *:first-child {
 	float: right;
+  margin-left: -5px; 
 	width: 100%;
-	margin-left: -5px; }		
+}		
 
 .ellipsis:after {
 	content: "\02026";  
-	box-sizing: content-box;
+  float: right; 
+	margin-left: -3em;
+	padding-right: 5px;	
+  position: relative;
+	left: 100%; 
+	top: -25px; 
+	width: 3em; 
+	text-align: right;
+  box-sizing: content-box;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
-	float: right; position: relative;
-	top: -25px; left: 100%; 
-	width: 3em; margin-left: -3em;
-	padding-right: 5px;
-	text-align: right;
 }
 
 /*==========================================================*\ 
@@ -301,12 +306,12 @@ input {
 #adventure .panel-heading {
  	margin:1%;
  	padding:5px;
-	text-align:center;
-	background-color: #FFF;
 	float: left;
 	width:23%;
+  text-align:center;
+  background-color: #FFF;
+  border-radius: .28571429rem;
 	box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
-	border-radius: .28571429rem;
 }
 
 /*==========================================================*\ 
@@ -441,14 +446,14 @@ svg:hover {
 		width: 100%;
 	}
 
-	#finito h2 {	
-		font-size: 2.3em;
+	#finito h2 {
 		position: fixed;
 		display: block;
+    bottom:5vh;
 		left: 0;
 		right: 0;
-		bottom:5vh;
 		text-align: center;
+    font-size: 2.3em;
 	}
 
 	h3 {	
@@ -462,7 +467,8 @@ svg:hover {
 	#adventure .panel-heading {
 		margin:0 0 1vh 0;
 		float: none;
-		width:100%	}
+		width:100%	
+  }
 
 }
 
@@ -471,8 +477,8 @@ svg:hover {
 @media screen and (max-width: 768px) {
 
 	.finitext, .quienestext, #loginForm-reduce, #whoareyou #loginForm {
+    margin: 0 auto;
 		width: 80%;
-		margin: 0 auto;
 	}
 
 	.content-small
@@ -486,8 +492,8 @@ svg:hover {
 	}
 
 	header {
+    height:25vh;
 		padding-top:5vh;
-		height:25vh;
 	}
 
 	#go .input-group, #whoareyou #loginForm {
