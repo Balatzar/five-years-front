@@ -3,7 +3,7 @@
 \*====================================================================================*/
 /**==================================================================================**\                                                                                             
  * CONTENT............................................................................*                                                      
- *   * COMMON................Forms / Buttons / Cards
+ *   * COMMON................Forms / Buttons / Cards (Ellipsis)
  *   * GO....................Background
  *   * ADVENTURE.............Background / Form
  *   * WHOAREYOU.............Background
@@ -196,6 +196,15 @@ input {
 	color: #000;
 }
 
+.panel-heading {
+ 	margin:1%;
+ 	padding:5px;
+  text-align:center;
+  background-color: #FFF;
+  border-radius: .28571429rem;
+	box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
+}
+
 .btn-group .btn-default {
 	margin-top: 7px;
 	padding: 0;
@@ -312,14 +321,8 @@ input {
 }
 
 #adventure .panel-heading {
- 	margin:1%;
- 	padding:5px;
 	float: left;
 	width:23%;
-  text-align:center;
-  background-color: #FFF;
-  border-radius: .28571429rem;
-	box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
 }
 
 /*==========================================================*\ 
@@ -342,11 +345,6 @@ input {
 	background-image:url("../img/bckgrnd/ocean2.jpg"); 
 }
 
-#morefriends .panel-heading {
- 	margin-bottom:10px;
- 	margin-top:0;
-}
-
 #morefriends .col-md-3 {
 	height: 22vh;
 }
@@ -364,9 +362,8 @@ input {
 }
 
 #morefriends .panel-heading {
- 	margin:5px 0 5px 0;
- 	padding:5px;
-	background-color: rgba(0, 0, 0, 0.2);
+	float: left;
+	width:25%;
 }
 
 /*==========================================================*\ 
@@ -478,6 +475,11 @@ svg:hover {
 		width:100%	
   }
 
+  #morefriends .panel-heading {
+    float: left;
+    width:45%;
+  }
+
 }
 
 /*TABLET*TABLET*TABLET*TABLET*TABLET*/
@@ -517,6 +519,8 @@ svg:hover {
 	}
 
 }
+
+/*DESKTOP*DESKTOP*DESKTOP*DESKTOP*/
 
 @media screen and (max-width: 1130px) {
 
