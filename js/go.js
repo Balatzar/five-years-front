@@ -1,7 +1,8 @@
 /* eslint-env jquery */
 
 (function go() {
-  $('.js-sendName').click(function sendName() {
+  $('.js-sendName').submit(function sendName(event) {
+    event.preventDefault();
     var name = $('input[name="name"]').val();
     if (!name) {
       return error('.js-sendName');
