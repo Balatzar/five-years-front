@@ -184,15 +184,38 @@ input {
 	COMMON - CARDS             
 \*===============================*/ 
 
-.panel-title.pull-left {
-	width:70%;
-	color: #FFF;
+.panel-title {
+	line-height: 2vh;
+	font-size: 12px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-  overflow: hidden;
+  	overflow: hidden;
 	text-overflow: ellipsis;
 	vertical-align: middle;
 	white-space:nowrap;
+}
+
+
+.panel-title.pull-left {
+	width:100%;
+	color: #000;
+}
+
+.btn-group {
+
+}
+
+#adventure .btn-default {
+  color: #000;
+  line-height: 20px;
+}
+
+.btn-default.edit {
+	border: 0.5px solid green;
+}
+
+.btn-default.remove {
+	border: 0.5px solid red;
 }
 
 /* Balthazar was here! */
@@ -246,9 +269,11 @@ input {
  	margin:1%;
  	padding:5px;
 	text-align:center;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: #FFF;
 	float: left;
 	width:23%;
+	box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
+	border-radius: .28571429rem;
 }
 
 /*
