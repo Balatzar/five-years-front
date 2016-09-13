@@ -5,7 +5,7 @@
     event.preventDefault();
     var name = $('input[name="name"]').val();
     if (!name) {
-      return error('.js-sendName');
+      return error('.js-error');
     }
     var data = {
       name: name,
@@ -23,7 +23,7 @@
   });
 
   $('input[name="name"]').keyup(function removeErr() {
-    error('.js-sendName', true);
+    error('.js-error', true);
   });
 
   function error(selector, remove) {
