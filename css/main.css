@@ -345,10 +345,6 @@ input {
 	background-image:url("../img/bckgrnd/ocean2.jpg"); 
 }
 
-#morefriends .col-md-3 {
-	height: 22vh;
-}
-
 /*===============================*\ 
 	MOREFRIENDS - FORM               
 \*===============================*/ 
@@ -363,7 +359,7 @@ input {
 
 #morefriends .panel-heading {
 	float: left;
-	width:25%;
+	width:100%;
 }
 
 /*==========================================================*\ 
@@ -477,7 +473,6 @@ svg:hover {
 
   #morefriends .panel-heading {
     float: left;
-    width:45%;
   }
 
 }
@@ -517,7 +512,7 @@ svg:hover {
 	svg {
 		width:20vw;
 	}
-
+	
 }
 
 /*DESKTOP*DESKTOP*DESKTOP*DESKTOP*/
