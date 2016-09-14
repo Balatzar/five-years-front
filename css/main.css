@@ -205,6 +205,15 @@ input {
 	box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
 }
 
+/* Balthazar was here! */
+
+.glyphicon {
+	cursor: pointer;
+	margin: 5px;
+}
+
+/*===== COMMON - CARDS - BUTTONS ======*/ 
+
 .btn-group .btn-default {
 	margin-top: 7px;
 	padding: 0;
@@ -222,13 +231,6 @@ input {
 	color: red;
 	border: 0.5px solid red;
 	border-radius: 0 2px 2px 0;
-}
-
-/* Balthazar was here! */
-
-.glyphicon {
-	cursor: pointer;
-	margin: 5px;
 }
 
 /*===== COMMON - CARDS - ELLIPSIS ======*/ 
@@ -353,13 +355,10 @@ input {
 	margin-top:5vh;
 } 
 
-#morefriends .col-xs-6 {
-	padding-bottom: 3vh;
-}
-
 #morefriends .panel-heading {
 	float: left;
 	width:100%;
+  margin-bottom: 3vh;
 }
 
 /*==========================================================*\ 
@@ -471,8 +470,13 @@ svg:hover {
 		width:100%	
   }
 
-  #morefriends .panel-heading {
+  /*#morefriends .panel-heading {
     float: left;
+  }*/
+
+  #morefriends .col-xs-6 {
+    padding-bottom: 3vh;
+    width: 100%;
   }
 
 }
