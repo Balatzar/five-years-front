@@ -51,6 +51,8 @@ h3 {
 
 h4 {	
 	color: #FFF;
+  font-family: "Lovelo";
+  font-size: 2em;
 }
 
 
@@ -92,6 +94,7 @@ header {
   bottom:11vh;
   left:0;
   right: 0;
+  text-align: center;
 }
 
 p {
@@ -408,12 +411,16 @@ input {
 /*==========================================================*\ 
 	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
 -------------------------------------------------------------- 
-	FINITO - FINITO - FINITO - FINITO - FINITO - FINITO
+	GUEST - GUEST - GUEST - GUEST - GUEST - GUEST - GUEST
 \*==========================================================*/ 
 
 #guest {
 	background-image:url("../img/bckgrnd/stairs.jpg"); 
 }
+
+/*===============================*\ 
+	GUEST - TEXT             
+\*===============================*/ 
 
 .text-guest {
 	margin: 0 auto;
@@ -423,11 +430,13 @@ input {
 
 #guest h4 {
 	text-align: center;
+  margin-top:4vh;
 }
+
 /*==========================================================*\ 
 	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
 -------------------------------------------------------------- 
-	GUEST - GUEST - GUEST - GUEST - GUEST - GUEST - GUEST
+
 \*==========================================================*/ 
 
 @font-face {
@@ -490,10 +499,6 @@ svg:hover {
 		width:100%	
   }
 
-  /*#morefriends .panel-heading {
-    float: left;
-  }*/
-
   #morefriends .col-xs-6 {
     padding-bottom: 3vh;
     width: 100%;
@@ -513,7 +518,6 @@ svg:hover {
 	.content-small
 	{
 		width:80vw;
-		/* Non centrer*/
 	}
 
 	h1 {
