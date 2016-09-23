@@ -49,6 +49,11 @@ h3 {
 	text-align: center;
 }
 
+h4 {	
+	color: #FFF;
+}
+
+
 /*==========================================================*\ 
 	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
 -------------------------------------------------------------- 
@@ -289,7 +294,7 @@ input {
 \*==========================================================*/ 
 
 #go {
-	background-image:url("../img/bckgrnd/friends2.jpg"); 
+	background-image:url("../img/bckgrnd/friends.jpg"); 
 }
 
 /*==========================================================*\ 
@@ -344,7 +349,7 @@ input {
 \*==========================================================*/ 
 
 #morefriends {
-	background-image:url("../img/bckgrnd/ocean2.jpg"); 
+	background-image:url("../img/bckgrnd/ocean.jpg"); 
 }
 
 /*===============================*\ 
@@ -375,7 +380,7 @@ input {
 	FINITO - FORM               
 \*===============================*/ 
 
-.finitext {
+.text-finito {
 	margin: 0 auto;
 	padding-top: 7vh;
 	width: 40vw;
@@ -403,7 +408,26 @@ input {
 /*==========================================================*\ 
 	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
 -------------------------------------------------------------- 
+	FINITO - FINITO - FINITO - FINITO - FINITO - FINITO
+\*==========================================================*/ 
 
+#guest {
+	background-image:url("../img/bckgrnd/stairs.jpg"); 
+}
+
+.text-guest {
+	margin: 0 auto;
+	padding-top: 4vh;
+	width: 30vw;
+}
+
+#guest h4 {
+	text-align: center;
+}
+/*==========================================================*\ 
+	CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT  
+-------------------------------------------------------------- 
+	GUEST - GUEST - GUEST - GUEST - GUEST - GUEST - GUEST
 \*==========================================================*/ 
 
 @font-face {
