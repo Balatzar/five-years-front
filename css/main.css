@@ -512,7 +512,16 @@ svg:hover {
 	svg {
 		width:200px;
 	}
-	
+
+ #adventure .form-inline .form-group{
+    display:inline-block;
+    width: auto;
+}
+
+ #adventure .form-control{
+    margin-bottom: 2vh;
+}
+
 }
 
 /*DESKTOP*DESKTOP*DESKTOP*DESKTOP*/
