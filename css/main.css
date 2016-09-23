@@ -460,10 +460,6 @@ svg:hover {
 		font-size: 1.3em;
 	}
 
-	svg {
-		width:30vw;
-	}
-
 	#adventure .panel-heading {
 		margin:0 0 1vh 0;
 		float: none;
@@ -514,7 +510,7 @@ svg:hover {
 	}
 
 	svg {
-		width:20vw;
+		width:200px;
 	}
 	
 }
