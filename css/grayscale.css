@@ -8,7 +8,8 @@ body {
   height: 100%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
-  background-color: #60BDA6;
+ /* background-color: #60BDA6;*/
+  background-image: url(../img/bckgrnd/texture.jpg);
 }
 
 html {
