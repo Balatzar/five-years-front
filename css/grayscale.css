@@ -77,6 +77,12 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
+
+.intro h1 {
+  font-size: 5em;
+  padding-top: 10vh;
+}
+
 .intro .intro-body {
   display: table-cell;
   vertical-align: middle;
@@ -108,7 +114,7 @@ a:focus {
 
 .container {
   height: 100vh;
-  padding-top: 25vh;
+  padding-top: 15vh;
 }
 
 .intro .container {
@@ -156,10 +162,6 @@ a:focus {
   height: 70vh;
 }
 
-#steps .container {
-  height: 150vh;
-}
-
 #steps h3 {
   color: #60BDA6;
   font-family: "Lovelo";
@@ -168,7 +170,6 @@ a:focus {
 
 #steps p {
   color: #000;
-  
 }
 
 /*===============================*\ 
