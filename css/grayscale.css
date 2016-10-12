@@ -19,7 +19,6 @@ html {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -139,7 +138,7 @@ a:focus {
   height: 100vh;
   padding: 50px 0;
   color: white;
-  background: url(../img/bckgrnd/road.jpg) no-repeat bottom center scroll;
+  background: url(../img/bckgrnd/bridge.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -159,6 +158,17 @@ a:focus {
 
 #steps .container {
   height: 150vh;
+}
+
+#steps h3 {
+  color: #60BDA6;
+  font-family: "Lovelo";
+  font-size: 1em;
+}
+
+#steps p {
+  color: #000;
+  
 }
 
 /*===============================*\ 
