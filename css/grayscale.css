@@ -176,14 +176,15 @@ a:focus {
   HOW - FOOTER               
 \*===============================*/ 
 
-footer {
+#index footer {
+  position: relative;
   margin: 0;
   padding: 0;
   height: 10vh;
   background-color: #FFF;
 }
 
-footer p {
+#index footer p {
   margin: 0 auto;
   line-height: 10vh;
   color: #60BDA6;
